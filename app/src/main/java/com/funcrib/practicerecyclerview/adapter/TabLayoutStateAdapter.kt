@@ -8,7 +8,7 @@ import com.funcrib.practicerecyclerview.view.fragment.AndroidFragment
 import com.funcrib.practicerecyclerview.view.fragment.GlobalFragment
 import com.funcrib.practicerecyclerview.view.fragment.IosFragment
 
-class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
+class TabLayoutStateAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
 
     private val numOfTabs: Int = 3

@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.funcrib.practicerecyclerview.R
-import com.funcrib.practicerecyclerview.adapter.ViewPagerAdapter
+import com.funcrib.practicerecyclerview.adapter.TabLayoutStateAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_main.*
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val viewPager: ViewPager2 = view_pager
         val tabLayout: TabLayout = tab_layout
 
-        val adapter = ViewPagerAdapter(supportFragmentManager, lifecycle)
+        val adapter = TabLayoutStateAdapter(supportFragmentManager, lifecycle)
         viewPager.adapter = adapter
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
